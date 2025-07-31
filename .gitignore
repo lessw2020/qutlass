@@ -1,13 +1,52 @@
-cmake-build-*
-.DS_Store
-build
-dist
-*.egg-info
-*.pyc
+# Ignore everything in third_party/cutlass directory
+third_party/cutlass/
 
-.venv/*
-CMakeFiles/*
-ctest/*
+# Build directories
+build/
+bin/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+Makefile
+
+# Python build artifacts
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyTorch extensions
 *.so
-third_party/cutlass/*
-bench_*/*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+ctest/
